@@ -15,47 +15,31 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
 }
 
 header{
-    padding: 2px;
-    width: 95vw;
-}
-
-input{
-    display:none;
-}
-
-header h1{
-    font-size: 26.5px;
-    color: var(--cor1);
-    width: 100px;
-}
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: rgb(255, 255, 255);
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--cor4);
-    border-radius: 10px;
-}
-nav{
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--cor1);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
-    
+
 }
-nav a{
-    color: var(--cor3);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    box-sizing: border-box;
-    transition: .1s;
-    
+
+nav{
+    margin-left: 20px;
+    margin-right: 5px;
 }
+nav > a{
+    color: var(--cor2);
+    padding:10px ;
+}
+
 nav a:hover{
     background-color:rgba(0, 0, 0, 0.178);
     border-radius: 7px 7px 7px 7px;
@@ -63,6 +47,17 @@ nav a:hover{
     color: #e4e731;
     
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor4);
+    border-radius: 10px;
+}
+
 body{
     background-image: linear-gradient(#f2e30fa1, #f2a20cd8, #fb4d3dd8 );
     /*linear-gradient(#f2e30fa1, #f2a20cd8, #fb4d3dd8 );*/
