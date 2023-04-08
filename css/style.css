@@ -28,19 +28,41 @@ header{
     flex-wrap: wrap;
     background-color: var(--cor1);
     padding: 10px;
-
 }
 
-nav{
-    margin-left: 20px;
+menu{
+    display: none;
     margin-right: 5px;
 }
-nav > a{
-    color: var(--cor2);
-    padding:10px ;
+
+menu > ul{
+    list-style-type: none;
 }
 
-nav a:hover{
+span#menu{
+    background-color: white;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#menu:hover{
+    background-color: #e4e731;
+    color: black;
+}
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: coral;
+    text-align: center;
+    border-top:2px solid black;
+    color: white;
+    border-radius: 10px;
+}
+menu a:hover{
     background-color:rgba(0, 0, 0, 0.178);
     border-radius: 7px 7px 7px 7px;
     transition-duration: 1s;
@@ -58,19 +80,10 @@ nav a:hover{
     border-radius: 10px;
 }
 
-body{
-    background-image: linear-gradient(#f2e30fa1, #f2a20cd8, #fb4d3dd8 );
-    /*linear-gradient(#f2e30fa1, #f2a20cd8, #fb4d3dd8 );*/
-}
 main{
-    width: 80%;
-    display: block;
+    width: 90vw;
     margin: auto;
-    background-color: var(--cor0);
-    border-radius: 0px 0px 15px 15px;
     padding: 15px;
-    margin-bottom: 0px;
-    
 }
 
 main > iframe{
@@ -85,7 +98,6 @@ main > h1{
     font-family: lobs, Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 35px;
-    margin-top: 0px;
     padding-top: 10px;
     font: 400px;
     
