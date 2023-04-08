@@ -15,7 +15,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 a{
     text-decoration: none;
@@ -24,10 +24,10 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--cor1);
+    padding: 10px;
 
 }
 
