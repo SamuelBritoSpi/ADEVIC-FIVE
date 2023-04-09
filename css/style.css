@@ -8,7 +8,8 @@
     --cor1:#22118f;
     --cor2:#F2E30F;
     --cor3:#F2A20C;
-    --cor4:#FB4D3D;  
+    --cor4:#FB4D3D;
+    --cor5:#f78258;  
 }
 *{
     text-align: justify;
@@ -33,30 +34,31 @@ header{
 menu{
     display: none;
     margin-right: 5px;
-}
+    }
 
 menu > ul{
     list-style-type: none;
 }
 
 span#menu{
-    background-color: white;
+    background-color: var(--cor2);
     display: block;
     color: black;
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 span#menu:hover{
-    background-color: #e4e731;
-    color: black;
+    background-color: var(--cor5);
+    color: white;
 }
 menu > ul > li > a{
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: coral;
+    background-color: var(--cor5);
     text-align: center;
     border-top:2px solid black;
     color: white;
