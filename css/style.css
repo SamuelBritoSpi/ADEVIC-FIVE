@@ -8,24 +8,15 @@
     --cor4:#FB4D3D;
     --cor5:#f78258;  
     --cor6:#000000;
+    --cor7:#fc3c3c;
 }
 *{
     text-align: justify;
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
+    text-decoration: white;
     font-size: 1.1rem;
 }
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: var(--cor4);
-    border-radius: 10px;
-}
-
 a{
     text-decoration: none;
 }
@@ -33,20 +24,47 @@ a:hover{
     color: var(--cor3);
 }
 
+    /*Barra lateral*/
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor4);
+    border-radius: 10px;
+}
+    /*End barra lateral*/
+
+    /*Cabeçalho*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--cor1);
+    background-image: url(/Imagens/banner.png);
+    background-position: center;
+    background-size: cover;
     padding: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.247)  ;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.171)  ;
 }
 
 menu{
     display: none;
     margin-right: 5px;
     }
+menu ul a::after{
+    content: "";
+    background-color: var(--cor4);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+menu ul a:hover::after{
+    width: 100%;
+}    
 
 menu > ul{
     list-style-type: none;
@@ -55,7 +73,7 @@ menu > ul{
 span#menu{
     background-color: var(--cor2);
     display: block;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     cursor: pointer;
@@ -65,36 +83,35 @@ span#menu{
 }
 
 span#menu:hover{
-    background-color: var(--cor5);
+    background-color: var(--cor1);
     color: white;
 }
 menu > ul > li > a{
     display: block;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
-    background-color: var(--cor5);
+    background-color: var(--cor0);
     text-align: center;
-    border-top:2px solid black;
-    color: white;
+    border-top:2px solid var(--cor0);
+    color: black;
     border-radius: 10px;
+    margin: 5px;
 }
 menu a:hover{
     background-color:rgba(0, 0, 0, 0.178);
     border-radius: 7px 7px 7px 7px;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
     color: var(--cor2);
-    
 }
-
+    /*End Cabeçalho*/
 main{
     width: 89vw;
     margin: auto;
     padding: 15px;
-    
 }
 .container{max-width: 700px;
-margin: auto;
-margin-top: 10px;}
+    margin: auto;
+    margin-top: 10px;}
 .video{
     width: 100%;
     padding-top: 56.25%;
