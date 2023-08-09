@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembleia de Deus - Urbis V</title>
+    <link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+</head>
+<body onresize="tamanhoMenu()">
+<!--Cabeçalho-->   
+    <header>
+        <a class="logo" href="../index.html"><img src="../Imagens/logo1test.png" alt="logo"></a>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">
+          menu  
+        </span>
+        <menu id="itens">
+            <ul>
+            <li><a href="../index.html">Principal</a></li>
+            <li><a href="../Programação/progamacao.html">Programação</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="../Novidades/novidades.html">Novidades</a></li>
+            <li><a href="../Eventos/eventos.html">Avisos</a></li>
+            </ul>
+        </menu>
+        <section class="banner">
+            
+        </section>   
+    </header>
+<!--End - Cabeçalho-->
+
+<!--Principal-->
+    <main>
+        <h1 class="hprog">Próximos Eventos</h1>
+
+        <section class="section2">
+            <article class="art2">
+
+                <h3>Dia 7 e 8 de Agosto</h3>
+                <div class="caixa">
+                    <h4>Festividade dos Jovens</h4>
+                    <p>Em comemoração aos 150 anos do grupo de jovens, teremos um culto comemorativo para o mesmo,.</p>
+                    <a href="">LEIA MAIS<span class="material-icons">
+                        call_missed_outgoing
+                        </span></a>
+                        
+                </div>
+                <h3>Dia 5 e 6 de Setembro</h3>
+                <div class="caixa">
+                    
+                    <h4>Campanha de Oração</h4>
+                    <p>Próximo final de semana 1 e 2 de julho festividade do grupo estrela da manhã. E nesta quinta banda som e louvor na campanha de oração.</p>
+                    <a href="">LEIA MAIS<span class="material-icons">call_missed_outgoing</span></a>
+                </div>
+                <h3>Dia 2 e 3 de Dezembro </h3>
+                <div class="caixa">
+                    
+                    <h4>Ensaios e Convites</h4>
+                    <p>Ensaio dos adolecentes e ensaio dos jovens, a noite grupo de jovens atendendo convite no morada dos passaros.</p>
+                    <a href="">LEIA MAIS<span class="material-icons">call_missed_outgoing</span></a>
+                </div>
+                <h3>Dia 25 Dezembro(Natal)</h3>
+                <div class="caixa">
+                    <h4>Santa ceia e culto da Família</h4>
+                    <p>Domingo as 8:30h Santa Ceia e a noite as 16:30h Culto da Família.</p>
+                    <a href="">LEIA MAIS<span class="material-icons">call_missed_outgoing</span></a>
+                </div>
+            </article>
+        </section>
+
+    </section> 
+    </main>
+<!--Principal-->
+<!--footer-->
+    <footer>
+        <section class="section4">
+            <div>
+                <ul>
+                    <li><a href=""><p>Contato</p></a></li>
+                    <li><a href=""><p>Trabalhe Conosco</p></a></li>
+                    <li><a href=""><p>Quem Somos</p></a></li>
+                    <li><a href=""><p>Igreja Matriz</p></a></li>
+                    <li><a href=""><p>Ofetas</p></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section5">
+            <p>Copyright© <a href="https://adevic.com.br/">Assembleia de Deus Missões</a>. Todos os Direitos Reservados.</p>
+        </section>
+    </footer>
+<!--footer-->
+<!--script-->
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+        function tamanhoMenu(){
+            if (window.innerWidth <= 768){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <!--script-->
+</body>
+</html>

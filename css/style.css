@@ -9,6 +9,7 @@
     --cor5:#f78258;  
     --cor6:#000000;
     --cor7:#fc3c3c;
+    --cor8:#990e0e;
 }
 *{
     text-align: justify;
@@ -42,7 +43,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(/Imagens/banner.png);
+    background-image: url(../Imagens/banner.png);
     background-position: center;
     background-size: cover;
     padding: 10px;
@@ -78,12 +79,12 @@ span#menu{
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.322);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.116);
     box-sizing: border-box;
 }
 
 span#menu:hover{
-    background-color: var(--cor1);
+    background-color: var(--cor7);
     color: white;
 }
 menu > ul > li > a{
@@ -99,20 +100,34 @@ menu > ul > li > a{
     margin: 5px;
 }
 menu a:hover{
-    background-color:rgba(0, 0, 0, 0.178);
+    background-color:rgba(0, 0, 0, 0.356);
     border-radius: 7px 7px 7px 7px;
     transition-duration: 0.3s;
     color: var(--cor2);
 }
     /*End Cabeçalho*/
+
+    /*principal*/
+
+.hprincipal{
+    font-family: lobster, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+    font-size: 2em;
+    color: var(--cor8);
+
+}    
 main{
     width: 89vw;
     margin: auto;
     padding: 15px;
 }
-.container{max-width: 700px;
+.container{
+    max-width: 700px;
     margin: auto;
-    margin-top: 10px;}
+    margin-top: 10px;
+}
 .video{
     width: 100%;
     padding-top: 56.25%;
@@ -127,14 +142,7 @@ main{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);
 }
-main > h1{
-    font-family: lobster, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: 35px;
-    padding-top: 10px;
-    font: 400px;
-    color: var(--cor6);
-}
+
 main p{
     margin: 12px;
     text-indent: 20px;
@@ -168,6 +176,20 @@ h4{
     margin-bottom: 20px;
 
 }
+/*principal*/
+
+/*Programação*/
+
+.hprog{
+    color: var(--cor8);
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-family: lobster, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Programação*/
 
 .palavra1> a {
     text-decoration: none;
@@ -177,7 +199,8 @@ h4{
     text-decoration: none;
     padding: 10px;
     }
-    
+
+/*Rodape*/    
 footer{
     background-color: var(--cor0);
     text-align: center;
@@ -190,8 +213,9 @@ footer p{
     padding: 3px;
 }
 footer ul p:hover{
+
     background-color: var(--cor4);
     color: white;
 }
-
+/*Rodape*/
 
